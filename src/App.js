@@ -1,24 +1,16 @@
-import logo from "./logo.svg";
-import "./App.css";
-
+import { CssBaseline } from "@mui/material";
+// import "./App.css";
+import DefaultCard from "./components/atoms/DefaultCard";
+import { ThemeProvider } from "@mui/material";
+import { getTheme } from "./styles/theme";
 function App() {
+  const theme = getTheme();
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload. Hello Eugenia!
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ThemeProvider theme={theme}>
+      <CssBaseline enableColorScheme />
+      <DefaultCard />;
+    </ThemeProvider>
   );
 }
 
