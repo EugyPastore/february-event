@@ -53,7 +53,6 @@ function ResponsiveAppBar() {
           sx={{
             display: "flex",
             justifyContent: "space-between",
-            height: "40px",
           }}
         >
           <ExperimentLogo sx={{ display: "flex" }} />
