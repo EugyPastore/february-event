@@ -1,5 +1,6 @@
 import { CssBaseline } from "@mui/material";
 import React from "react";
+import { Outlet } from "react-router-dom";
 
 // import "./App.css";
 import DefaultCard from "./components/atoms/DefaultCard";
@@ -12,8 +13,8 @@ function App() {
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline enableColorScheme />
-      <ResponsiveAppBar></ResponsiveAppBar>
-      <DefaultCard />
+      <ResponsiveAppBar />
+      <Outlet />
     </ThemeProvider>
   );
 }

@@ -8,7 +8,7 @@ import Menu from "@mui/material/Menu";
 import MenuIcon from "@mui/icons-material/Menu";
 import Container from "@mui/material/Container";
 import MenuItem from "@mui/material/MenuItem";
-import ExperimentLogo from "../../assets/ExperimentLogo";
+import BrandLogo from "../../assets/BrandLogo.svg";
 
 const pages = [
   "Home",
@@ -47,7 +47,7 @@ function ResponsiveAppBar() {
             justifyContent: "space-between",
           }}
         >
-          <ExperimentLogo sx={{ display: "flex" }} />
+          <img src={BrandLogo} alt="SVG logo image" width="30" height="30" />
           <Box sx={{ display: "flex" }}>
             <IconButton
               size="large"

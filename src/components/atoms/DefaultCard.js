@@ -1,28 +1,23 @@
 import { Button, Typography } from "@mui/material";
 import Paper from "@mui/material/Paper";
-import ExperimentLogo from "../../assets/ExperimentLogo";
 import React from "react";
 
 function DefaultCard() {
   return (
     <Paper elevation={3} variant="outlined">
       <Typography
-        variant="h1"
+        variant="h3"
         sx={{
           color: "transparentGreen.main",
         }}
       >
-        Header 1111
+        Hello, current user!
       </Typography>
       <Typography variant="h2">Header2</Typography>
       <Typography variant="h3">Header3</Typography>
-      <Button variant="contained" color="secondary">
+      <Button variant="contained" color="secondary" sx={{ display: "flex" }}>
         click
       </Button>
-      <Button variant="contained" color="secondary">
-        click
-      </Button>
-      <ExperimentLogo sx={{ height: 10, width: 10 }}></ExperimentLogo>
     </Paper>
   );
 }
