@@ -1,6 +1,7 @@
 import { Button, Typography } from "@mui/material";
 import Paper from "@mui/material/Paper";
 import ExperimentLogo from "../../assets/ExperimentLogo";
+import React from "react";
 
 function DefaultCard() {
   return (

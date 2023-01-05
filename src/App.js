@@ -1,4 +1,6 @@
 import { CssBaseline } from "@mui/material";
+import React from "react";
+
 // import "./App.css";
 import DefaultCard from "./components/atoms/DefaultCard";
 import { ThemeProvider } from "@mui/material";
