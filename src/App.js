@@ -14,6 +14,7 @@ function App() {
     <ThemeProvider theme={theme}>
       <CssBaseline enableColorScheme />
       <ResponsiveAppBar />
+      <p>small change</p>
       <Outlet />
     </ThemeProvider>
   );
