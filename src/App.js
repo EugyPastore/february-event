@@ -3,13 +3,15 @@ import { CssBaseline } from "@mui/material";
 import DefaultCard from "./components/atoms/DefaultCard";
 import { ThemeProvider } from "@mui/material";
 import { getTheme } from "./styles/theme";
+import ResponsiveAppBar from "./components/molecules/ResponsiveAppBar";
 function App() {
   const theme = getTheme();
 
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline enableColorScheme />
-      <DefaultCard />;
+      <ResponsiveAppBar></ResponsiveAppBar>
+      <DefaultCard />
     </ThemeProvider>
   );
 }
