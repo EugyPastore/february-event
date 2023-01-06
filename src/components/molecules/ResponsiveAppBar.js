@@ -47,7 +47,12 @@ function ResponsiveAppBar() {
             justifyContent: "space-between",
           }}
         >
-          <img src={BrandLogo} alt="SVG logo image" width="30" height="30" />
+          <img
+            src={BrandLogo}
+            alt="brand on navigation"
+            width="30"
+            height="30"
+          />
           <Box sx={{ display: "flex" }}>
             <IconButton
               size="large"
